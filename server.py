@@ -2,7 +2,7 @@ import os
 import requests
 
 
-API_KEY = "RGAPI-92645b72-cfd1-4083-9eb4-f35ce8026fd1"
+API_KEY = os.environ["RIOT_API_KEY"]
 summ_account = ["https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/", "?api_key=" + API_KEY]
 match_hist = ["https://na1.api.riotgames.com/lol/match/v3/matchlists/by-account/", "?api_key=" + API_KEY]
 match_data = ["https://na1.api.riotgames.com/lol/match/v3/matches/", "?api_key=" + API_KEY]
