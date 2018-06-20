@@ -44,7 +44,7 @@ def process(name):
 		else:
 			lens[date_data] = duration/3600
 		print("getting len " + str(len(lens)))
-		if len(lens) > 10:
+		if len(lens) > 7:
 			break
 
 	max_date = max(lens.keys())
